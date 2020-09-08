@@ -1,39 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="outer-guard">
-        <% stories.forEach(function(story){ %>
-            <div class="spacey-card">
-                <h4>Countries: <%= story.Combined_Key %> 😻  </h4>
-                <ul>
-                    <li>Confirmed Cases 🙊 : <%= story.Confirmed %></li> 
-                    <li>Active Cases ⚔ : <%= story.Active %></li> 
-                    <li>Recoveries 🏥 : <%= story.Recovered %></li> 
-                    <li>No. of Deaths 🏴‍☠️ : <%= story.Deaths %></li> 
-                </ul>  
-            </div>
-        <% }); %>
-        </div>
-
-    <!-- <ul>
-        <% devices.forEach(function(device){ %>
-          <li><%= device.Combined_Key %></li>
-        <% }); %>
-    </ul> -->
-    <!-- <% devices.forEach(function(device){ %>
-        <div class="spacey">
-            <div class="card">
-                <h1><%= device.Combined_Key %></h1>
-                <div class="card__content">
-                </div>
-            </div>
-            
-            <% }); %> -->
-</body>
+      <% stories.forEach(function(story){ %>
+      <div class="spacey-card">
+        <h4>Countries: <%= story.Combined_Key %> 😻</h4>
+        <ul>
+          <li>Confirmed Cases: <%= story.Confirmed %></li>
+          <li>Active Cases: <%= story.Active %></li>
+          <li>Recoveries: <%= story.Recovered %></li>
+          <li>No. of Deaths: <%= story.Deaths %></li>
+        </ul>
+      </div>
+      <% }); %>
+    </div>
+  </body>
 </html>
